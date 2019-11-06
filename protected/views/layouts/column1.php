@@ -3,19 +3,42 @@
 
 <?php echo $this->renderPartial('//layouts/_header', array()); ?>
 
+<?php
+    $dum_slides = array(
+                    [
+                    'img_desk' => 'bahan-bangunan-granit-tile-banjarmasin-001.jpg',
+                    'img_mob' => 'fcs-corpus-02_mob.jpg',
+                    ],
+                    [
+                    'img_desk' => 'bahan-bangunan-granit-tile-banjarmasin-002.jpg',
+                    'img_mob' => 'fcs-corpus-03_mob.jpg',
+                    ],
+                    [
+                    'img_desk' => 'bahan-bangunan-granit-tile-banjarmasin-003.jpg',
+                    'img_mob' => 'fcs-corpus-04_mob.jpg',
+                    ],
+                    [
+                    'img_desk' => 'bahan-bangunan-granit-tile-banjarmasin-004.jpg',
+                    'img_mob' => 'fcs-corpus-04_mob.jpg',
+                    ],
+                );
+<?php ?>
+
 <div class="fcs-wrapper outers_fcs_wrapper prelatife wrapper-slide">
     <img class="w-100 d-none d-sm-block" src="<?php echo $this->assetBaseurl; ?>home-sec-1_02.jpg" alt="">
 
     <div id="myCarousel_home" class="carousel carousel-fade" data-ride="carousel" data-interval="4500">
             <div class="carousel-inner">
+
                 <div class="carousel-item <?php if($key == 0): ?>active<?php endif ?> home-slider-new">
-                    
-                    <img class="w-100 d-none d-sm-block" src="<?php echo $this->assetBaseurl; ?>DESIGN.jpg" alt="First slide">
-                    <!-- <img class="w-100 d-block d-sm-none" src="<?php // echo Yii::app()->baseUrl.ImageHelper::thumb(600,980, '/images/'. $value->image2 , array('method' => 'adaptiveResize', 'quality' => '90')) ?>" alt=""> -->
+                    <?php foreach ($dum_slides as $key => $value): ?>
+                        <img class="w-100 d-none d-sm-block" src="<?php echo $this->assetBaseurl; ?><?php echo $value['img_desk']>" alt="First slide">
+                    <?php endforeach ?>
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                     </ol>
                     <div class="carousel-caption caption-slider-home mx-auto">
                         <div class="prelatife container mx-auto">
