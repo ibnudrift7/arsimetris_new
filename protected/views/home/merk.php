@@ -48,17 +48,79 @@ if (isset($this->setting['merek_hero_image'])) {
                 </div>
             </div>
 
+			<?php
+				$merk = [
+					[
+						'img_desk' => 'logo-sec-2.png',
+						'img_mob' => 'Niro Granite adalah sebuah brand untuk produk Granit Tile yang berkelas dan berkualitas tinggi, memiliki koleksi yang sangat lengkap dan aneka varian yang bergaya modern serta dinamis. Granite Arsimetris Djaja adalah agen resmi dan distributor untuk produk granit tile Niro Granite di Banjarmasin, Kalimantan Selatan dan kota sekitarnya.',
+					],
+					[
+						'img_desk' => 'onduline.jpg',
+						'img_mob' => 'Genteng pintar pilihan terbaik bergaya mediteranian klasik yang elegant dan mewah kualitas premium dan teknologi dari perancis dengan pilihan warna artistik/menarik, ringan dan fleksibel, pemasangan cepat serta ekonomis, tidak berkarat/korosi serta tidak berisik saat hujan. Memiliki ketahanan terhadap air dan bergaransi. Arsimetris Djaja adalah agen resmi dan distributor untuk produk genteng pintar Onduline di Banjarmasin, Kalimantan Selatan dan kota sekitarnya.',
+					],
+					[
+						'img_desk' => 'sika.jpg',
+						'img_mob' => 'Solusi untuk mengatasi masalah infrastruktur bangunan dan bangunan yang terpercaya, berkualitas premium internasional dari mulai atas/atap sampai bawah/pondasi. Arsimetris Djaja adalah agen resmi dan distributor untuk produk Sika di Banjarmasin, Kalimantan Selatan dan kota sekitarnya.',
+					],
+					[
+						'img_desk' => 'GERMANY-BRILLIANT.jpg',
+						'img_mob' => 'produk perlengkapan rumah unggulan kualitas terbaik dengan konsep gaya hidup modern untuk hunian Anda. Produk terkemuka yang telah berdiri lebih dari 14 tahun dengan konsep gaya hidup modern dan bergaransi. Arsimetris Djaja adalah agen resmi dan distributor untuk produk sanitaryware Germany Brilliant di Banjarmasin, Kalimantan Selatan dan kota sekitarnya.',
+					],
+					[
+						'img_desk' => 'solahart.png',
+						'img_mob' => 'Solahart lebih dari sekedar pemanas air tenaga surya Solahart adalah solusi kebutuhan air hangat dengan kualitas top dunia yang berkualiatas, memiliki efisiensi tinggi, hemat energi, ramah lingkungan dan sangat aman digunakan. Solahart Solar Water Heater, pelopor Pemanas Air Tenaga Surya di dunia dan sudah dipakai lebih dari 2 juta orang di Indonesia. Arsimetris Djaja adalah agen resmi dan distributor untuk produk pemanas air Solahart di Banjarmasin, Kalimantan Selatan dan kota sekitarnya.',
+					],
+					[
+						'img_desk' => 'torro.jpg',
+						'img_mob' => 'Pipa PPR adalah pipa steril dari bahan plastik Polypropilene yang tahan panas dan anti bocor. Sistem penyambungan Pipa dan Fitting bersenyawa dalam hitungan detik dan sangat kuat. Pipa yang tepat untuk bangunan Anda, sistem air panas dan dingin kualitas terbaik buatan Italia. Arsimetris Djaja adalah agen resmi dan distributor untuk produk pipa PPR Toro di Banjarmasin, Kalimantan Selatan dan kota sekitarnya.',
+					],
+					[
+						'img_desk' => 'grc board.jpg',
+						'img_mob' => 'GRC board menyediakan produk papan semen ber-SNI, berbagai aplikasi untuk bangunan rumah, kantor, gedung : GRC board, papan semen, super panel. Dengan banyaknya keunggulan tersebut maka GRC board saat ini lebih disukai sebagai elemen pelengkap desain interior maupun eksterior menggantikan pemakaian gypsum dan triplek. Arsimetris Djaja adalah agen resmi dan distributor untuk produk papan semen GRC Board di Banjarmasin, Kalimantan Selatan dan kota sekitarnya. ',
+					],
+					[
+						'img_desk' => 'friedrich-grohe-logo.jpg',
+						'img_mob' => 'GROHE adalah brand terkemuka untuk produk-produk keran mandi dan shower, keran dapur, thermostats dan installations systems di segmen premium. Di GROHE, desain lebih dari sekedar estetika, kualitas merupakan fitur utama dari Grohe dan perpaduan sempurna antara bentuk dan fungsi dalam desain dan bergaransi. Arsimetris Djaja adalah agen resmi untuk produk Grohe di Banjarmasin, Kalimantan Selatan dan kota sekitarnya.',
+					],
+					[
+						'img_desk' => 'asian-paints.png',
+						'img_mob' => 'Dapatkan warna lukisan dinding rumah dari perusahaan produsen cat terbesar di India. Solusi interior, eksterior rumah & solusi kedap air yang eksklusif. Asian Paints Indonesia adalah bagian dari Grup Asian Paints, yang memiliki ranking diantara 10 terbaik perusahaan pelapis dekoratif di dunia. Arsimetris Djaja adalah agen resmi dan distributor untuk produk cat Asian Paint di Banjarmasin, Kalimantan Selatan dan kota sekitarnya.',
+					],
+					[
+						'img_desk' => 'sunlouvre.png',
+						'img_mob' => 'Kanopi Aluminium Sunlouvre dengan teknologi terbaru menggunakan dua system manual dan system otomatis .Teknologi konstruksi Kanopi Aluminium Sunlouvre menyediakan solusi untuk mengatasi udara pengap dan panas di dalam ruangan berfungsi untuk sirkulasi udara dan pencahayaan. Praktis dan fungsional, SunLouvre adalah alternatif yang sangat baik. Dengan mekanisme yang sederhana dan manual, handal dan fleksibel dalam sistem konstruksi. Doormateto adalah pintu dan jendela kawat nyamuk,  pintu panel berprofil modern & elegan terbuat dari kombinasi alumunium, stainles steel dan kawat baja. Arsimetris Djaja adalah agen resmi dan distributor untuk produk Sun Louvre & Doormateto di Banjarmasin, Kalimantan Selatan dan kota sekitarnya.',
+					],
+					[
+						'img_desk' => 'Elephant-Gypsum.jpg',
+						'img_mob' => 'Gypsum Elephant Board merupakan bahan interior bangunan yang terbuat dari batuan gips alami dan dilapisi kertas khusus pada permukaannya. Produk ini termasuk dalam produk ramah lingkungan (Green label Singapore), yang memiliki karakteristik lebih tahan api, lebih tahan panas, lebih meredam suara, ekonomis dan mudah dipasang. Arsimetris Djaja adalah agen resmi untuk produk doormateto di Banjarmasin, Kalimantan Selatan dan kota sekitarnya.',
+					],
+					[
+						'img_desk' => 'download.jpg',
+						'img_mob' => 'pintu wina, yaitu pintu garasi dengan motif ukiran atau motif kembang, pintu garasi ini di kerjakan menggunakan mesin laser cutting Pintu besi WiNA ini berbahan dasar plat besi dengan proses tekuk,bending dan finishing powder coating dengan teknologi tinggi didukung dengan peralatan canggih dalam pemenuhan perkembangan tekhnologi perpintuan dewasa ini. Arsimetris Djaja adalah agen resmi untuk produk pintu Wina di Banjarmasin, Kalimantan Selatan dan kota sekitarnya. ',
+					],
+					[
+						'img_desk' => 'Hafele-Logo-sml.jpg',
+						'img_mob' => 'Häfele adalah spesialis terkemuka untuk peralatan mebel dan perangkat keras arsitektur, mitra yang berharga bagi pembuat kabinet, serta sistem penguncian elektronik terkemuka di dunia. Arsimetris Djaja adalah agen resmi untuk produk Hafele di Banjarmasin, Kalimantan Selatan dan kota sekitarnya.',
+					]
+				];
+			?>
             <div class="row">
-                <?php for ($i=0;$i<=11;$i++) {?>
+                <?php foreach ($merk as $key => $value): ?>
                 <div class="col-md-30 pt-3">
                     <div class="box-new">
-                        <img class="d-block mx-auto" src="<?php echo $this->assetBaseurl; ?>logo-sec-2.png" alt="">
+						<div class="image-dalam">
+							<div class="image-dalamm">
+								<img class="d-block mx-auto" src="<?php echo $this->assetBaseurl; ?><?php echo $value['img_desk'] ?>" alt="">
+							</div>
+						</div>
                         <div class="isi-box">
-                            <p>Niro Granite adalah sebuah brand untuk produk Granit Tile yang berkelas dan berkualitas tinggi, memiliki koleksi yang sangat lengkap dan aneka varian yang bergaya modern serta dinamis. Granite Arsimetris Djaja adalah agen resmi dan distributor untuk produk granit tile Niro Granite di Banjarmasin, Kalimantan Selatan dan kota sekitarnya.</p>
+							<div class="dalamnya">
+								<p><?php echo $value['img_mob'] ?></p>
+							</div>
                         </div>
                     </div>
                 </div>
-                <?php } ?>
+                <?php endforeach ?>
             </div>
         </div>
     </div>
