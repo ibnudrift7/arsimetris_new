@@ -523,7 +523,16 @@ class HomeController extends Controller
 		$this->pageTitle = 'Merk - '.$this->pageTitle;
 		$this->layout='//layouts/column2';
 
+		$criteria = new CDbCriteria;
+        $criteria->with = array('description');
+        $criteria->addCondition('active = "1"');
+        $criteria->addCondition('description.language_id = :language_id');
+        $criteria->params[':language_id'] = $this->languageID;
+        $criteria->order = 't.date_input ASC';
+		$data = Gallery::model()->findAll($criteria);
+
 		$this->render('merk', array(	
+			'data' => $data,
 		));
 	}
 

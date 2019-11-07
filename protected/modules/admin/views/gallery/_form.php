@@ -95,7 +95,7 @@
 			    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$lang->code.'.png' ?>"></span>
 			    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
 				</div>						
-				<?php /*
+
 				<div class="pj-multilang-wrap myLanguage control-group" style="display: <?php if ($key==$this->setting['lang_deff']): ?>block<?php else: ?>none<?php endif ?>;" data-id="<?php echo $lang->id ?>">
 				<?php
 				echo $form->labelEx($value, '['.$lang->code.']content');
@@ -103,7 +103,7 @@
 			    ?>
 			    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$lang->code.'.png' ?>"></span>
 			    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
-				</div>*/ ?>
+				</div>
 
 			    <?php
 			}
@@ -113,7 +113,7 @@
 		    $lists_gallery = CHtml::listData($models, 
 		                'id', 'name'); 
 	    	?>
-			<?php echo $form->dropDownListRow($model,'product_id', $lists_gallery, array('class'=>'input-block-level', 'empty'=>'-- Pilih Produk --')); ?>
+			<?php // echo $form->dropDownListRow($model,'product_id', $lists_gallery, array('class'=>'input-block-level', 'empty'=>'-- Pilih Produk --')); ?>
 
 				<div class="row-fluid">
 					<div class="span6">
@@ -166,9 +166,9 @@
 		    </div>
 		    <div class="widgetcontent">
 				<?php echo $form->fileFieldRow($model,'image',array(
-				'hint'=>'<b>Note:</b> Ukuran gambar adalah 1268 x 730px. Gambar yang lebih besar akan ter-crop otomatis', 'style'=>"width: 100%")); ?>
+				'hint'=>'<b>Note:</b> Ukuran gambar adalah 300 x 135px. Gambar yang lebih besar akan ter-crop otomatis', 'style'=>"width: 100%")); ?>
 				<?php if ($model->scenario == 'update'): ?>
-				<img style="max-width: 100%;" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(1268,730, '/images/gallery/'.$model->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>"/>
+				<img style="max-width: 100%;" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(300,135, '/images/gallery/'.$model->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>"/>
 				<?php endif; ?>
 		    </div>
 		</div>

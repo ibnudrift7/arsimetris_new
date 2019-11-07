@@ -32,7 +32,7 @@
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/slide/create')); ?>">Create Slide</a></li>
             </ul>
         </li>
-        
+        <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/gallery/index')); ?>"><span class="fa fa-image"></span> <?php echo Tt::t('admin', 'Merek') ?></a></li>
 
         <li>&nbsp;</li>
         <li class="dropdown"><a href="#"><span class="fa fa-folder"></span> <?php echo Tt::t('admin', 'Static Page') ?></a>

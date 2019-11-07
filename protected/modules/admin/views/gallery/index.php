@@ -1,16 +1,16 @@
 <?php
 $this->breadcrumbs=array(
-	'Product Gallery',
+	'Merek',
 );
 
 $this->pageHeader=array(
 	'icon'=>'fa fa-tag',
-	'title'=>'Product Gallery',
-	'subtitle'=>'Data Product Gallery',
+	'title'=>'Merek',
+	'subtitle'=>'Data Merek',
 );
 
 $this->menu=array(
-	array('label'=>'Add Product Gallery', 'icon'=>'plus-sign','url'=>array('create')),
+	array('label'=>'Add Merek', 'icon'=>'plus-sign','url'=>array('create')),
 );
 ?>
 
@@ -19,7 +19,7 @@ $this->menu=array(
 	<div class="span12">
 		<div class="widgetbox block-rightcontent">                        
 		    <div class="headtitle">
-		        <h4 class="widgettitle">Data Product Gallery</h4>
+		        <h4 class="widgettitle">Data Merek</h4>
 		    </div>
 		    <div class="widgetcontent">
 				<ul class="thumbnails">
@@ -39,6 +39,10 @@ $this->menu=array(
 					</li>
 				<?php endforeach ?>
 				</ul>
+				<div class="divider15"></div>
+				<?php $this->widget('CLinkPager', array(
+				    'pages' => $search->getPagination(),
+				)) ?>
 		    </div><!--widgetcontent-->
 		</div>
 	</div>

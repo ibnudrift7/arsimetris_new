@@ -104,23 +104,27 @@ if (isset($this->setting['merek_hero_image'])) {
 					]
 				];
 			?>
+
             <div class="row">
-                <?php foreach ($merk as $key => $value): ?>
+                <?php foreach ($data as $key => $value): ?>
                 <div class="col-md-30 pt-3">
                     <div class="box-new">
 						<div class="image-dalam">
 							<div class="image-dalamm">
-								<img class="d-block mx-auto" src="<?php echo $this->assetBaseurl; ?><?php echo $value['img_desk'] ?>" alt="">
+								<img class="d-block mx-auto img img-fluid" src="<?php echo Yii::app()->baseUrl.'/images/gallery/'. $value->image; ?>" alt="<?php echo $value->description->title; ?>">
 							</div>
 						</div>
                         <div class="isi-box">
-							<div class="dalamnya">
-								<p><?php echo $value['img_mob'] ?></p>
+							<div class="dalamnya text-center">
+                                <h2><?php echo $value->description->title ?></h2>
+                                <div class="py-1"></div>
+								<?php echo $value->description->content ?>
 							</div>
                         </div>
                     </div>
                 </div>
                 <?php endforeach ?>
+                
             </div>
         </div>
     </div>
